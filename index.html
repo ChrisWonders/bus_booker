@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e2d2a">
+  <title>Staff Bus Ticketer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">SB</div><div><strong>Staff Bus</strong><span>Ticketer</span></div></div>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav id="desktop-nav"></nav>
+      <div class="sidebar-bottom" id="sidebar-bottom"><button class="nav-item" data-view="profile"><span class="icon">⚙</span>Profile & settings</button><div class="support-card"><span class="support-dot"></span><div><b>Need help?</b><small>Contact transport desk</small></div><span class="support-arrow">↗</span></div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="mobile-brand"><div class="brand-mark">SB</div><strong>Staff Bus</strong></div><div class="topbar-actions"><button class="notification">♧<i></i></button><div class="workspace-menu"><button class="workspace-switch" data-action="toggle-workspace-menu" title="Change view" aria-expanded="false"><span class="switch-icon">⇄</span><span>Change view</span><span class="workspace-chevron">⌄</span></button><div class="workspace-dropdown" id="workspace-dropdown"><button data-workspace="employee"><span class="workspace-option-icon">◎</span><span><b>Employee</b><small>Book and manage your rides</small></span><span class="workspace-check">✓</span></button><button data-workspace="system"><span class="workspace-option-icon">✦</span><span><b>System Control</b><small>Manage operations and access</small></span><span class="workspace-check">✓</span></button></div></div><button class="profile" data-view="profile"><div class="avatar" id="profile-avatar">AO</div><div class="profile-copy"><b id="profile-name">Amaka Okafor</b><span id="profile-role">Employee</span></div><span class="chevron">⌄</span></button></div></header>
+      <div class="content-wrap">
+        <button id="page-back" class="page-back" data-action="back" aria-label="Go back">←</button>
+        <div class="page-heading"><div><p class="eyebrow">Tuesday, September 8, 2026</p><h1 id="page-title">Good morning, Amaka</h1><p class="subheading" id="page-subtitle">Your commute, sorted.</p></div><div class="role-switch"><span>View as</span><select id="role-select"><option>Employee</option><option>Bus Admin</option><option>System Control</option></select></div></div>
+        <div id="app-view"></div>
+      </div>
+    </main>
+    <div id="modal-root"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
